@@ -20,11 +20,11 @@
         </span>
       </label>
       <label>
-        Budget ($):
-        <input type="number" placeholder="e.g. 150" formControlName="budget" min="0" [class.invalid]="submitted && plannerForm.controls['budget'].invalid" />
+        Budget:
+        <input type="number" placeholder="Enter your budget" formControlName="budget" min="0" [class.invalid]="submitted && plannerForm.controls['budget'].invalid" />
         <span class="form-error" *ngIf="submitted && plannerForm.controls['budget'].errors">
           <span *ngIf="plannerForm.controls['budget'].errors['required']">Budget is required.</span>
-          <span *ngIf="plannerForm.controls['budget'].errors['min']">Minimum $10 suggested.</span>
+          <span *ngIf="plannerForm.controls['budget'].errors['min']">Minimum value: 10 suggested.</span>
         </span>
       </label>
       <button type="submit">Find Trips</button>
@@ -36,7 +36,7 @@
       <div *ngFor="let trip of tripResults" style="background:#F7C87322;border-left:6px solid #F25C54; margin-bottom:0.9rem; border-radius:0.7rem; padding:1.15rem 1rem;">
         <div style="font-size:1.1rem; font-weight:700; color:#2D5F5D;">{{ trip.destination }}</div>
         <div style="color:#333;font-size:1rem;margin:0.43rem 0 0.33rem 0;">{{ trip.description }}</div>
-        <div style="font-size:0.95rem;color: #2D5F5DBB;">Mood: <b>{{ trip.mood }}</b> | Max Distance: <b>{{ trip.maxDistance }}km</b> | Max Budget: <b>${{ trip.budget }}</b></div>
+        <div style="font-size:0.95rem;color: #2D5F5DBB;">Mood: <b>{{ trip.mood }}</b> | Max Distance: <b>{{ trip.maxDistance }}km</b> | Max Budget: <b>{{ trip.budget }}</b></div>
       </div>
     </div>
   </div>
