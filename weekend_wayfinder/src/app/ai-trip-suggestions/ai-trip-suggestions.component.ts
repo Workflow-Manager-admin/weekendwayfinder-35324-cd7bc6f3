@@ -7,28 +7,28 @@ const AI_SAMPLES = [
     mood: 'Relaxing',
     destination: 'Coastal Spa Resort',
     distance: 180,
-    budget: 220,
+    budget: 1200,
     description: 'Enjoy luxury spa treatments and tranquil sea views.'
   },
   {
     mood: 'Relaxing',
     destination: 'Lakeside Cabin Escape',
     distance: 130,
-    budget: 170,
+    budget: 1100,
     description: 'Disconnect in a cozy cabin by the lake, paddle or read by the water.'
   },
   {
     mood: 'Relaxing',
     destination: 'Mountain Hot Springs',
     distance: 320,
-    budget: 260,
+    budget: 1350,
     description: 'Relax with scenic mountain views and rejuvenating natural springs.'
   },
   {
     mood: 'Relaxing',
     destination: 'Botanical Garden Day',
     distance: 25,
-    budget: 120,
+    budget: 1000,
     description: 'Stroll among blooms and enjoy a tranquil lunch in a garden café.'
   },
 
@@ -37,28 +37,28 @@ const AI_SAMPLES = [
     mood: 'Adventurous',
     destination: 'Forest Zipline Park',
     distance: 70,
-    budget: 130,
+    budget: 1200,
     description: 'Soar over the treetops in a guided zipline experience.'
   },
   {
     mood: 'Adventurous',
     destination: 'Desert ATV Safari',
     distance: 290,
-    budget: 185,
+    budget: 1700,
     description: 'Hit desert trails on an all-terrain adventure with friends.'
   },
   {
     mood: 'Adventurous',
     destination: 'Mountain Biking Expedition',
     distance: 240,
-    budget: 160,
+    budget: 1300,
     description: 'Conquer challenging trails and camp under the stars.'
   },
   {
     mood: 'Adventurous',
     destination: 'Urban Scavenger Hunt',
     distance: 35,
-    budget: 100,
+    budget: 1000,
     description: 'Race to solve clues and explore the city in a unique way.'
   },
 
@@ -67,51 +67,51 @@ const AI_SAMPLES = [
     mood: 'Cultural',
     destination: 'City Art Walk',
     distance: 40,
-    budget: 100,
+    budget: 1000,
     description: 'Join a guided walk of city galleries and story-rich murals.'
   },
   {
     mood: 'Cultural',
     destination: 'Historic Town Festival',
     distance: 80,
-    budget: 120,
+    budget: 1050,
     description: 'Immerse yourself in living history, food stalls, and local artisan crafts.'
   },
   {
     mood: 'Cultural',
     destination: 'Jazz and Food Night',
     distance: 60,
-    budget: 110,
+    budget: 1200,
     description: 'Experience live jazz and try a tasting menu at a local venue.'
   },
   {
     mood: 'Cultural',
     destination: 'Museum Hop',
     distance: 20,
-    budget: 100,
+    budget: 1000,
     description: 'Visit top cultural museums with a day pass and snack breaks.'
   },
 
-  // Budget
+  // Budget but now meet new minimum
   {
     mood: 'Relaxing',
     destination: 'Park Picnic Retreat',
     distance: 12,
-    budget: 100,
+    budget: 1000,
     description: 'Pack your own snacks and enjoy open air yoga in a beautiful park.'
   },
   {
     mood: 'Adventurous',
     destination: 'Sunrise Hike & Swim',
     distance: 65,
-    budget: 120,
+    budget: 1050,
     description: 'Catch sunrise from a peak, then cool off with a wild lake swim.'
   },
   {
     mood: 'Cultural',
     destination: 'Local Farmers Market',
     distance: 8,
-    budget: 100,
+    budget: 1000,
     description: 'Sample fresh produce and handcrafts while supporting local growers.'
   }
 ];

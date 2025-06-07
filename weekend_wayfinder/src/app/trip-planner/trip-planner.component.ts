@@ -7,35 +7,35 @@ const SAMPLE_TRIPS = [
   {
     mood: 'Relaxing',
     maxDistance: 220,
-    budget: 200,
+    budget: 1200,
     destination: 'Coastal Spa Retreat',
     description: 'Unwind by the sea at a boutique spa with soothing treatments.'
   },
   {
     mood: 'Adventurous',
     maxDistance: 300,
-    budget: 180,
+    budget: 1300,
     destination: 'Mountain Biking Adventure',
     description: 'Tackle rugged trails and camp beneath the stars.'
   },
   {
     mood: 'Cultural',
     maxDistance: 120,
-    budget: 120,
+    budget: 1000,
     destination: 'Art & Food City Tour',
     description: 'Discover local galleries, heritage sites, and must-try food spots.'
   },
   {
     mood: 'Relaxing',
     maxDistance: 100,
-    budget: 100,
+    budget: 1000,
     destination: 'Lakeside Picnic',
     description: 'Enjoy serenity with paddleboarding, a packed lunch, and quiet trails.'
   },
   {
     mood: 'Adventurous',
     maxDistance: 80,
-    budget: 110, // previously 90, now at least 100
+    budget: 1200,
     destination: 'Kayak River Quest',
     description: 'Test your skills with thrilling rapids and scenic water views.'
   },
@@ -68,7 +68,7 @@ export class TripPlannerComponent {
     this.plannerForm = new FormGroup({
       distance: new FormBuilder().control('', [Validators.required, Validators.min(1)]),
       mood: new FormBuilder().control('', [Validators.required]),
-      budget: new FormBuilder().control('', [Validators.required, Validators.min(100)])
+      budget: new FormBuilder().control('', [Validators.required, Validators.min(1000)])
     });
 
     // Listen and trigger suggestions as user types/changes form, with debounce

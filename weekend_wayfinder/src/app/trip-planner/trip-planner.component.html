@@ -21,10 +21,10 @@
       </label>
       <label>
         Budget:
-        <input type="number" placeholder="Enter your budget" formControlName="budget" min="0" [class.invalid]="submitted && plannerForm.controls['budget'].invalid" />
+        <input type="number" placeholder="e.g. 1500" formControlName="budget" min="1000" [class.invalid]="submitted && plannerForm.controls['budget'].invalid" />
         <span class="form-error" *ngIf="submitted && plannerForm.controls['budget'].errors">
           <span *ngIf="plannerForm.controls['budget'].errors['required']">Budget is required.</span>
-          <span *ngIf="plannerForm.controls['budget'].errors['min']">Minimum value: 100 required.</span>
+          <span *ngIf="plannerForm.controls['budget'].errors['min']">Minimum value: 1000 required.</span>
         </span>
       </label>
       <button type="submit">Find Trips</button>
