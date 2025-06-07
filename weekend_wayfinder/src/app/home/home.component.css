@@ -1,15 +1,32 @@
+/* 
+  Hero background now uses an AI-generated (swap actual file as needed).
+  To change: Replace 'ai-home-bg.jpg' in url('../assets/ai-home-bg.jpg') in this file 
+  with the path/filename to your image placed in weekend_wayfinder/src/assets/.
+*/
 .home-hero {
   min-height: 90vh;
   width: 100vw;
+  /* Stronger multi-stop overlay for greater clarity */
   background: 
-    linear-gradient(rgba(41,53,67,0.34), rgba(45,95,93,0.38)),
-    url('/assets/weekend-trip.jpg') center/cover no-repeat;
+    linear-gradient(120deg, rgba(41,53,67,0.47) 0%, rgba(60,83,80,0.14) 50%, rgba(45,95,93,0.42) 100%),
+    url('/assets/ai-home-bg.jpg') center/cover no-repeat; /* << Placeholder path - see comment above */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* handles small devices for background */
+  /* For subtle parallax on desktop, fallback for mobile: */
   background-attachment: fixed;
+  position: relative;
 }
+.home-hero::after {
+  /* Slight dark overlay if needed for busy backgrounds, adjustable */
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(120deg, rgba(41,53,67,0.11) 0%, rgba(60,83,80,0.05) 50%, rgba(45,95,93,0.16) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
 .home-hero-content {
   background: rgba(255,255,255,0.94);
   border-radius: 2rem;
@@ -20,12 +37,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 2; /* Ensure on top of overlays */
+  backdrop-filter: blur(2px); /* subtle for busier photos */
 }
 .home-hero-content h1 {
   text-align: center;
   color: #2D5F5D;
   margin-bottom: 1rem;
-  font-size: 2.3rem;
+  font-size: 2.4rem;
+  text-shadow: 0 2px 12px rgba(41,53,67,0.09);
 }
 .home-hero-content p {
   text-align: center;
@@ -49,11 +70,20 @@
   color: #fff;
 }
 @media (max-width: 600px) {
+  .home-hero {
+    min-height: 100vh;
+    background:
+      linear-gradient(120deg, rgba(41,53,67,0.67) 0%, rgba(60,83,80,0.21) 55%, rgba(45,95,93,0.52) 100%),
+      url('/assets/ai-home-bg.jpg') center/cover no-repeat;
+    /* Stronger overlay on mobile for clarity, image path as above */
+  }
   .home-hero-content {
     padding: 1.2rem 0.6rem;
     max-width: 97vw;
+    z-index: 2;
   }
   .home-hero-content h1 {
     font-size: 1.35rem;
+    text-shadow: 0 1px 4px rgba(41,53,67,0.08);
   }
 }
