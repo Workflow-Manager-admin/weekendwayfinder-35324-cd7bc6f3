@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 // PUBLIC_INTERFACE
 @Component({
@@ -9,8 +10,12 @@ import { Component } from '@angular/core';
 })
 // PUBLIC_INTERFACE
 export class HomeComponent {
-  // For navigation, router would be injected here if needed; currently not used per linting
+  // eslint-disable-next-line no-unused-vars
+  constructor(private router: Router) {}
+
+  // PUBLIC_INTERFACE
   goToTripPlanner(): void {
-    // Navigation handled by routerLink or can be re-enabled as needed
+    // Properly navigate to trip planner
+    this.router.navigate(['/trip-planner']);
   }
 }
