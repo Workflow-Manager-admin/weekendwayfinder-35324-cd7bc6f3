@@ -1,10 +1,14 @@
 .home-hero {
   min-height: 90vh;
   width: 100vw;
-  background: url('https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  background: 
+    linear-gradient(rgba(41,53,67,0.34), rgba(45,95,93,0.38)),
+    url('/assets/weekend-trip.jpg') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* handles small devices for background */
+  background-attachment: fixed;
 }
 .home-hero-content {
   background: rgba(255,255,255,0.94);

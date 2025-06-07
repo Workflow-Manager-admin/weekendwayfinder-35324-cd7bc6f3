@@ -16,7 +16,7 @@ chunk-YQOESBWP.js    | -                             | 754 bytes |
                      | Initial total                 |  98.14 kB
 
 Lazy chunk files     | Names                         |  Raw size
-chunk-URVMPBEA.js    | trip-planner-component        |  18.30 kB | 
+chunk-KKKHX5NJ.js    | trip-planner-component        |  19.04 kB | 
 chunk-XLX3JMQU.js    | ai-trip-suggestions-component |  10.96 kB | 
 chunk-7LYH43VA.js    | sign-in-component             |   8.49 kB | 
 chunk-V3LHQNPP.js    | home-component                |   3.45 kB | 
@@ -25,18 +25,18 @@ chunk-V3LHQNPP.js    | home-component                |   3.45 kB |
 Server bundles      
 Initial chunk files  | Names                         |  Raw size
 polyfills.server.mjs | polyfills.server              | 572.91 kB | 
-chunk-ZVFIQUUT.mjs   | -                             |   6.62 kB | 
+chunk-SURFJQB5.mjs   | -                             |   6.62 kB | 
 server.mjs           | server                        |   1.42 kB | 
 main.server.mjs      | main.server                   | 831 bytes | 
 chunk-FFILDKJJ.mjs   | -                             | 788 bytes | 
 
 Lazy chunk files     | Names                         |  Raw size
-chunk-JZVENYPI.mjs   | trip-planner-component        |  18.34 kB | 
+chunk-QFZQBMGO.mjs   | trip-planner-component        |  19.07 kB | 
 chunk-MK23F5ET.mjs   | ai-trip-suggestions-component |  10.99 kB | 
 chunk-QACMJG6E.mjs   | sign-in-component             |   8.53 kB | 
 chunk-OYXYVCSG.mjs   | home-component                |   3.48 kB | 
 
-Application bundle generation complete. [2.814 seconds]
+Application bundle generation complete. [2.876 seconds]
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
@@ -45,44 +45,22 @@ NOTE: Raw file sizes do not reflect development server per-request transformatio
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
 Browser bundles    
-Initial chunk files | Names                  |  Raw size
-main.js             | main                   |   6.18 kB | 
+Initial chunk files | Names          |  Raw size
+main.js             | main           |   6.18 kB | 
 
-Lazy chunk files    | Names                  |  Raw size
-chunk-C45XPNTC.js   | trip-planner-component |  18.57 kB | 
-
-
-Server bundles     
-Initial chunk files | Names                  |  Raw size
-chunk-CCOKLWRW.mjs  | -                      |   6.62 kB | 
-server.mjs          | server                 |   1.42 kB | 
-main.server.mjs     | main.server            | 831 bytes | 
-
-Lazy chunk files    | Names                  |  Raw size
-chunk-WMI5VIBX.mjs  | trip-planner-component |  18.61 kB | 
-
-Application bundle generation complete. [0.781 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles    
-Initial chunk files | Names                  |  Raw size
-main.js             | main                   |   6.18 kB | 
-
-Lazy chunk files    | Names                  |  Raw size
-chunk-KKKHX5NJ.js   | trip-planner-component |  19.04 kB | 
+Lazy chunk files    | Names          |  Raw size
+chunk-VKMNG2IU.js   | home-component |   3.48 kB | 
 
 
 Server bundles     
-Initial chunk files | Names                  |  Raw size
-chunk-SURFJQB5.mjs  | -                      |   6.62 kB | 
-server.mjs          | server                 |   1.42 kB | 
-main.server.mjs     | main.server            | 831 bytes | 
+Initial chunk files | Names          |  Raw size
+chunk-3WLLIAGE.mjs  | -              |   6.62 kB | 
+server.mjs          | server         |   1.42 kB | 
+main.server.mjs     | main.server    | 831 bytes | 
 
-Lazy chunk files    | Names                  |  Raw size
-chunk-QFZQBMGO.mjs  | trip-planner-component |  19.07 kB | 
+Lazy chunk files    | Names          |  Raw size
+chunk-D7NQ6OID.mjs  | home-component |   3.51 kB | 
 
-Application bundle generation complete. [0.311 seconds]
+Application bundle generation complete. [0.706 seconds]
 
 Page reload sent to client(s).
