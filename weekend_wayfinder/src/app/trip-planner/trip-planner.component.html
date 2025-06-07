@@ -1,24 +1,43 @@
 <div class="planner-wrapper">
   <div class="planner-card">
     <h2>Plan Your Weekend Adventure</h2>
-    <form class="planner-form">
+    <form class="planner-form" [formGroup]="plannerForm" (ngSubmit)="onSubmit()">
       <label>
         Distance (km):
-        <input type="number" placeholder="e.g. 200" name="distance" min="0"/>
+        <input type="number" placeholder="e.g. 200" formControlName="distance" min="0" [class.invalid]="submitted && plannerForm.controls['distance'].invalid" />
+        <span class="form-error" *ngIf="submitted && plannerForm.controls['distance'].errors">
+          <span *ngIf="plannerForm.controls['distance'].errors['required']">Distance is required.</span>
+          <span *ngIf="plannerForm.controls['distance'].errors['min']">Must be at least 1km.</span>
+        </span>
       </label>
       <label>
         Mood:
-        <select name="mood">
-          <option>Relaxing</option>
-          <option>Adventurous</option>
-          <option>Cultural</option>
+        <select formControlName="mood" [class.invalid]="submitted && plannerForm.controls['mood'].invalid">
+          <option *ngFor="let mood of moodOptions" [value]="mood.value" [disabled]="mood.value === ''">{{ mood.label }}</option>
         </select>
+        <span class="form-error" *ngIf="submitted && plannerForm.controls['mood'].errors">
+          <span *ngIf="plannerForm.controls['mood'].errors['required']">Mood is required.</span>
+        </span>
       </label>
       <label>
         Budget ($):
-        <input type="number" placeholder="e.g. 150" name="budget" min="0"/>
+        <input type="number" placeholder="e.g. 150" formControlName="budget" min="0" [class.invalid]="submitted && plannerForm.controls['budget'].invalid" />
+        <span class="form-error" *ngIf="submitted && plannerForm.controls['budget'].errors">
+          <span *ngIf="plannerForm.controls['budget'].errors['required']">Budget is required.</span>
+          <span *ngIf="plannerForm.controls['budget'].errors['min']">Minimum $10 suggested.</span>
+        </span>
       </label>
       <button type="submit">Find Trips</button>
     </form>
+
+    <!-- AI Suggestions Card-Style Results Below Form -->
+    <div *ngIf="suggestionsShown && tripResults.length === 0" class="no-results" style="margin-top:1.4rem;color:#F25C54; font-weight:600;">No trips match, try adjusting your preferences!</div>
+    <div *ngIf="tripResults.length > 0" style="width:100%;margin-top:1.1rem;">
+      <div *ngFor="let trip of tripResults" style="background:#F7C87322;border-left:6px solid #F25C54; margin-bottom:0.9rem; border-radius:0.7rem; padding:1.15rem 1rem;">
+        <div style="font-size:1.1rem; font-weight:700; color:#2D5F5D;">{{ trip.destination }}</div>
+        <div style="color:#333;font-size:1rem;margin:0.43rem 0 0.33rem 0;">{{ trip.description }}</div>
+        <div style="font-size:0.95rem;color: #2D5F5DBB;">Mood: <b>{{ trip.mood }}</b> | Max Distance: <b>{{ trip.maxDistance }}km</b> | Max Budget: <b>${{ trip.budget }}</b></div>
+      </div>
+    </div>
   </div>
 </div>

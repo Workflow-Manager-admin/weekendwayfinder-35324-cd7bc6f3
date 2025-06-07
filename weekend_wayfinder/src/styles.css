@@ -1,1 +1,52 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary: #2D5F5D;
+  --secondary: #F7C873;
+  --accent: #F25C54;
+  --light-bg: #f6faf8;
+  --radius: 1rem;
+  --font: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-weight: 400;
+  background: var(--light-bg);
+}
+body {
+  color: #233C39;
+}
+h1, h2, h3, h4 {
+  font-weight: 700;
+  color: var(--primary);
+  letter-spacing: 0.01rem;
+}
+button {
+  font-family: var(--font);
+}
+input, select, button {
+  font-family: inherit;
+}
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.16s;
+}
+a:hover {
+  color: var(--primary);
+}
+::-webkit-scrollbar {
+  width: 12px;
+  background: #F7F6F2;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--secondary);
+  border-radius: 100vw;
+}
+@media (max-width: 600px) {
+  html, body {
+    font-size: 98%;
+  }
+}

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+// PUBLIC_INTERFACE
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -8,7 +9,8 @@ import { Component } from '@angular/core';
 })
 // PUBLIC_INTERFACE
 export class HomeComponent {
-  goToTripPlanner() {
-    // Handled by router in template; implementation may be added later
+  // For navigation, router would be injected here if needed; currently not used per linting
+  goToTripPlanner(): void {
+    // Navigation handled by routerLink or can be re-enabled as needed
   }
 }

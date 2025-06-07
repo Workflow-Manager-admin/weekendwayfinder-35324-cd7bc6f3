@@ -1,8 +1,17 @@
 <div class="ai-suggestions-wrapper">
   <div class="ai-suggestions-card">
     <h2>AI Trip Suggestions</h2>
-    <div class="ai-suggestion-sample">
-      <p>[AI-based trip ideas tailored to your preferences will appear here!]</p>
+    <div *ngIf="displayed.length === 0" class="ai-suggestion-sample">
+      <p>No AI trip matches found—adjust your preferences for new adventures!</p>
+    </div>
+    <div *ngIf="displayed.length > 0">
+      <div *ngFor="let trip of displayed" class="ai-suggestion-sample" style="margin-bottom:1.18rem;">
+        <div style="font-weight:700;">{{ trip.destination }}</div>
+        <div style="font-size:1.03rem;">{{ trip.description }}</div>
+        <div style="font-size:0.97rem; color: #2D5F5D77;">
+          Mood: <b>{{ trip.mood }}</b> | Max Distance: <b>{{ trip.distance }}km</b> | Max Budget: <b>${{ trip.budget }}</b>
+        </div>
+      </div>
     </div>
   </div>
 </div>

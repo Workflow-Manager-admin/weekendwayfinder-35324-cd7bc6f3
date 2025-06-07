@@ -1,10 +1,23 @@
 <div class="sign-in-bg">
   <div class="sign-in-container">
     <h2>Sign in to WeekendWayfinder</h2>
-    <form class="sign-in-form">
-      <input type="email" placeholder="Email" name="email" required autocomplete="username" />
-      <input type="password" placeholder="Password" name="password" required autocomplete="current-password" />
+    <form class="sign-in-form" [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+      <div>
+        <input type="email" placeholder="Email" name="email" autocomplete="username" formControlName="email" [class.invalid]="submitted && email?.invalid" />
+        <div class="form-error" *ngIf="submitted && email && email.errors">
+          <span *ngIf="email.errors && email.errors['required']">Email is required.</span>
+          <span *ngIf="email.errors && email.errors['email']">Please enter a valid email.</span>
+        </div>
+      </div>
+      <div>
+        <input type="password" placeholder="Password" name="password" autocomplete="current-password" formControlName="password" [class.invalid]="submitted && password?.invalid" />
+        <div class="form-error" *ngIf="submitted && password && password.errors">
+          <span *ngIf="password.errors && password.errors['required']">Password is required.</span>
+          <span *ngIf="password.errors && password.errors['minlength']">Password must be at least 6 characters.</span>
+        </div>
+      </div>
       <button type="submit">Sign In</button>
+      <div class="form-error" *ngIf="errorMessage">{{ errorMessage }}</div>
     </form>
   </div>
 </div>

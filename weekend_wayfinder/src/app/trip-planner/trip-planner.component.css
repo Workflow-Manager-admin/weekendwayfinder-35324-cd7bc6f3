@@ -56,6 +56,15 @@
 .planner-form button:hover {
   background: #F25C54;
 }
+.form-error {
+  color: #F25C54;
+  font-size: 0.94rem;
+  min-height: 1.1em;
+}
+input.invalid, select.invalid {
+  border: 1.5px solid #F25C54;
+  background: #fff6f6;
+}
 @media (max-width: 600px) {
   .planner-card {
     padding: 1.25rem 0.5rem;
