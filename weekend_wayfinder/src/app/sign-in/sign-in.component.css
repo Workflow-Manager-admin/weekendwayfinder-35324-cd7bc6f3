@@ -1,0 +1,61 @@
+.sign-in-bg {
+  min-height: 100vh;
+  width: 100vw;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-in-container {
+  background: rgba(255,255,255,0.98);
+  border-radius: 2rem;
+  box-shadow: 0 8px 32px rgba(45,95,93,0.16);
+  padding: 2.5rem 2rem;
+  max-width: 350px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sign-in-container h2 {
+  margin-bottom: 1.3rem;
+  color: #2D5F5D;
+}
+.sign-in-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+.sign-in-form input {
+  border: 1.5px solid #eee;
+  padding: 0.7rem 1rem;
+  border-radius: 0.7rem;
+  font-size: 1rem;
+  background: #fafafa;
+  transition: border 0.2s;
+}
+.sign-in-form input:focus {
+  border: 1.5px solid #2D5F5D;
+  outline: none;
+}
+.sign-in-form button {
+  background: #F25C54;
+  color: #fff;
+  font-weight: 600;
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 0.7rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.sign-in-form button:hover {
+  background: #2D5F5D;
+}
+@media (max-width: 600px) {
+  .sign-in-container {
+    padding: 1.2rem 0.6rem;
+    max-width: 97vw;
+  }
+}

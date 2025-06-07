@@ -1,0 +1,64 @@
+.planner-wrapper {
+  min-height: 85vh;
+  background: #f6faf8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.planner-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px rgba(45,95,93,0.08);
+  padding: 2.2rem 2rem;
+  max-width: 420px;
+  width: 96%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.planner-card h2 {
+  color: #2D5F5D;
+  margin-bottom: 1.25rem;
+}
+.planner-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+.planner-form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #2D5F5D;
+}
+.planner-form input,
+.planner-form select {
+  margin-top: 0.4rem;
+  padding: 0.65rem 0.85rem;
+  border: 1.5px solid #eee;
+  border-radius: 0.6rem;
+  font-size: 1rem;
+  background: #fafaf9;
+}
+.planner-form button {
+  margin-top: 1.1rem;
+  background: #2D5F5D;
+  color: #fff;
+  padding: 0.7rem 1.3rem;
+  border: none;
+  border-radius: 0.7rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.planner-form button:hover {
+  background: #F25C54;
+}
+@media (max-width: 600px) {
+  .planner-card {
+    padding: 1.25rem 0.5rem;
+    max-width: 100vw;
+  }
+}
