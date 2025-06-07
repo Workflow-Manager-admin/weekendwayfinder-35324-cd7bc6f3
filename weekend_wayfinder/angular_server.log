@@ -36,11 +36,9 @@ chunk-QACMJG6E.mjs   | sign-in-component             |   8.53 kB |
 chunk-XBQ5FBNT.mjs   | ai-trip-suggestions-component |   6.17 kB | 
 chunk-4OM5UUE5.mjs   | home-component                |   3.32 kB | 
 
-Application bundle generation complete. [2.808 seconds]
+Application bundle generation complete. [2.754 seconds]
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
-7:05:43 AM [vite] (client) Re-optimizing dependencies because vite config has changed
-7:05:43 AM [vite] (ssr) Re-optimizing dependencies because vite config has changed
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.17.0.2:3000/
