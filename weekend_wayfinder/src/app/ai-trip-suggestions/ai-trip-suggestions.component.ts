@@ -92,7 +92,103 @@ const AI_SAMPLES = [
     description: 'Visit top cultural museums with a day pass and snack breaks.'
   },
 
-  // Budget but now meet new minimum
+  // Romantic
+  {
+    mood: 'Romantic',
+    destination: 'Winery Sunset Dinner',
+    distance: 92,
+    budget: 1500,
+    description: 'Wine tasting and sunset dinner at a beautiful vineyard.'
+  },
+  {
+    mood: 'Romantic',
+    destination: 'Seaside Couples Retreat',
+    distance: 55,
+    budget: 1250,
+    description: 'A cozy weekend with spa, walks by the water, and rose petals.'
+  },
+
+  // Wellness
+  {
+    mood: 'Wellness',
+    destination: 'Mountain Yoga Escape',
+    distance: 60,
+    budget: 1400,
+    description: 'Morning yoga, healthy meals, and nature hikes for rejuvenation.'
+  },
+  {
+    mood: 'Wellness',
+    destination: 'Detox & Spa Day',
+    distance: 40,
+    budget: 1100,
+    description: 'Relax, unwind, and cleanse at a wellness spa center.'
+  },
+
+  // Family
+  {
+    mood: 'Family',
+    destination: 'Adventure Water Park',
+    distance: 100,
+    budget: 1200,
+    description: 'Slides, pools, and fun activities for all ages at a family fun park.'
+  },
+  {
+    mood: 'Family',
+    destination: 'Animals & Outdoors Farm Stay',
+    distance: 75,
+    budget: 1300,
+    description: 'Children enjoy playing with animals, tractor rides, and outdoor games.'
+  },
+
+  // Foodie
+  {
+    mood: 'Foodie',
+    destination: 'City Street Food Crawl',
+    distance: 45,
+    budget: 1250,
+    description: 'Sample international cuisines from top-rated food trucks and markets.'
+  },
+  {
+    mood: 'Foodie',
+    destination: 'Country Gourmet Trail',
+    distance: 95,
+    budget: 1350,
+    description: 'Tour farms and producers, taste cheeses, chocolates, and fine wines.'
+  },
+
+  // Nature
+  {
+    mood: 'Nature',
+    destination: 'Forest Camping Adventure',
+    distance: 170,
+    budget: 1000,
+    description: 'Unplug and reconnect with nature; guided hikes and a night under the stars.'
+  },
+  {
+    mood: 'Nature',
+    destination: 'Botanical Garden Explorer',
+    distance: 25,
+    budget: 1050,
+    description: 'A tranquil day in nature amongst blooming landscapes and rare plants.'
+  },
+
+  // Luxury
+  {
+    mood: 'Luxury',
+    destination: 'Chic City Penthouse Weekend',
+    distance: 320,
+    budget: 1800,
+    description: 'Five-star accommodation with rooftop pool and fine dining.'
+  },
+  {
+    mood: 'Luxury',
+    destination: 'Prestige Ski Resort',
+    distance: 200,
+    budget: 2000,
+    description: 'First-class amenities, private ski lessons, and a fireside suite.'
+  },
+
+  // Retain a few 'budget' and other original entries, adapt so they fit the new mood scale
   {
     mood: 'Relaxing',
     destination: 'Park Picnic Retreat',
