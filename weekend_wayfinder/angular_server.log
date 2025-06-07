@@ -19,99 +19,6 @@ Lazy chunk files     | Names                         |  Raw size
 chunk-KKKHX5NJ.js    | trip-planner-component        |  19.04 kB | 
 chunk-XLX3JMQU.js    | ai-trip-suggestions-component |  10.96 kB | 
 chunk-7LYH43VA.js    | sign-in-component             |   8.49 kB | 
-chunk-VKMNG2IU.js    | home-component                |   3.48 kB | 
-
-
-Server bundles      
-Initial chunk files  | Names                         |  Raw size
-polyfills.server.mjs | polyfills.server              | 572.91 kB | 
-chunk-3WLLIAGE.mjs   | -                             |   6.62 kB | 
-server.mjs           | server                        |   1.42 kB | 
-main.server.mjs      | main.server                   | 831 bytes | 
-chunk-FFILDKJJ.mjs   | -                             | 788 bytes | 
-
-Lazy chunk files     | Names                         |  Raw size
-chunk-QFZQBMGO.mjs   | trip-planner-component        |  19.07 kB | 
-chunk-MK23F5ET.mjs   | ai-trip-suggestions-component |  10.99 kB | 
-chunk-QACMJG6E.mjs   | sign-in-component             |   8.53 kB | 
-chunk-D7NQ6OID.mjs   | home-component                |   3.51 kB | 
-
-Application bundle generation complete. [2.719 seconds]
-
-Watch mode enabled. Watching for file changes...
-NOTE: Raw file sizes do not reflect development server per-request transformations.
-  ➜  Local:   http://localhost:3000/
-  ➜  Network: http://172.17.0.2:3000/
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.640 seconds]
-
-✘ [ERROR] Could not resolve "../assets/ai-home-bg.jpg" [plugin angular-css-resource]
-
-    src/app/home/home.component.css:12:8:
-      12 │     url('../assets/ai-home-bg.jpg') center/cover no-repeat; /* << ...
-         ╵         ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.156 seconds]
-
-✘ [ERROR] Could not resolve "../assets/ai-home-bg.jpg" [plugin angular-css-resource]
-
-    src/app/home/home.component.css:12:8:
-      12 │     url('../assets/ai-home-bg.jpg') center/cover no-repeat; /* << ...
-         ╵         ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.127 seconds]
-
-✘ [ERROR] Could not resolve "../assets/ai-home-bg.jpg" [plugin angular-css-resource]
-
-    src/app/home/home.component.css:12:8:
-      12 │     url('../assets/ai-home-bg.jpg') center/cover no-repeat; /* << ...
-         ╵         ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.104 seconds]
-
-✘ [ERROR] Could not resolve "../assets/ai-home-bg.jpg" [plugin angular-css-resource]
-
-    src/app/home/home.component.css:12:8:
-      12 │     url('../assets/ai-home-bg.jpg') center/cover no-repeat; /* << ...
-         ╵         ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.154 seconds]
-
-✘ [ERROR] Could not resolve "../assets/ai-home-bg.jpg" [plugin angular-css-resource]
-
-    src/app/home/home.component.css:77:10:
-      77 │       url('../assets/ai-home-bg.jpg') center/cover no-repeat;
-         ╵           ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Browser bundles     
-Initial chunk files  | Names                         |  Raw size
-polyfills.js         | polyfills                     |  90.20 kB | 
-main.js              | main                          |   6.18 kB | 
-styles.css           | styles                        | 999 bytes | 
-chunk-YQOESBWP.js    | -                             | 754 bytes | 
-
-                     | Initial total                 |  98.14 kB
-
-Lazy chunk files     | Names                         |  Raw size
-chunk-KKKHX5NJ.js    | trip-planner-component        |  19.04 kB | 
-chunk-XLX3JMQU.js    | ai-trip-suggestions-component |  10.96 kB | 
-chunk-7LYH43VA.js    | sign-in-component             |   8.49 kB | 
 chunk-AJLHS7YO.js    | home-component                |   4.40 kB | 
 
 
@@ -129,6 +36,53 @@ chunk-MK23F5ET.mjs   | ai-trip-suggestions-component |  10.99 kB |
 chunk-QACMJG6E.mjs   | sign-in-component             |   8.53 kB | 
 chunk-H35CYJNN.mjs   | home-component                |   4.43 kB | 
 
-Application bundle generation complete. [0.165 seconds]
+Application bundle generation complete. [2.681 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.17.0.2:3000/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names          |  Raw size
+main.js             | main           |   6.18 kB | 
+
+Lazy chunk files    | Names          |  Raw size
+chunk-47MA34SP.js   | home-component |   4.47 kB | 
+
+
+Server bundles     
+Initial chunk files | Names          |  Raw size
+chunk-I256DO4S.mjs  | -              |   6.62 kB | 
+server.mjs          | server         |   1.42 kB | 
+main.server.mjs     | main.server    | 831 bytes | 
+
+Lazy chunk files    | Names          |  Raw size
+chunk-Z2URDBJ4.mjs  | home-component |   4.50 kB | 
+
+Application bundle generation complete. [0.719 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Browser bundles    
+Initial chunk files | Names          |  Raw size
+main.js             | main           |   6.18 kB | 
+
+Lazy chunk files    | Names          |  Raw size
+chunk-46SAE3ZB.js   | home-component |   4.54 kB | 
+
+
+Server bundles     
+Initial chunk files | Names          |  Raw size
+chunk-DDA2MKE3.mjs  | -              |   6.62 kB | 
+server.mjs          | server         |   1.42 kB | 
+main.server.mjs     | main.server    | 831 bytes | 
+
+Lazy chunk files    | Names          |  Raw size
+chunk-27TJJUZB.mjs  | home-component |   4.57 kB | 
+
+Application bundle generation complete. [0.185 seconds]
 
 Page reload sent to client(s).

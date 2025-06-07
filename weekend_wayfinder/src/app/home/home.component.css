@@ -9,7 +9,7 @@
   /* Stronger multi-stop overlay for greater clarity */
   background: 
     linear-gradient(120deg, rgba(41,53,67,0.47) 0%, rgba(60,83,80,0.14) 50%, rgba(45,95,93,0.42) 100%),
-    url('/assets/ai-home-bg.jpg') center/cover no-repeat; /* << Placeholder path - see comment above */
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,7 +74,7 @@
     min-height: 100vh;
     background:
       linear-gradient(120deg, rgba(41,53,67,0.67) 0%, rgba(60,83,80,0.21) 55%, rgba(45,95,93,0.52) 100%),
-      url('/assets/ai-home-bg.jpg') center/cover no-repeat;
+      url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
     /* Stronger overlay on mobile for clarity, image path as above */
   }
   .home-hero-content {
