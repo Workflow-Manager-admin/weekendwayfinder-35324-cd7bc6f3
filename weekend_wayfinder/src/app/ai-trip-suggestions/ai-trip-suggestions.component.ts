@@ -28,7 +28,7 @@ const AI_SAMPLES = [
     mood: 'Relaxing',
     destination: 'Botanical Garden Day',
     distance: 25,
-    budget: 45,
+    budget: 120,
     description: 'Stroll among blooms and enjoy a tranquil lunch in a garden café.'
   },
 
@@ -37,7 +37,7 @@ const AI_SAMPLES = [
     mood: 'Adventurous',
     destination: 'Forest Zipline Park',
     distance: 70,
-    budget: 100,
+    budget: 130,
     description: 'Soar over the treetops in a guided zipline experience.'
   },
   {
@@ -58,7 +58,7 @@ const AI_SAMPLES = [
     mood: 'Adventurous',
     destination: 'Urban Scavenger Hunt',
     distance: 35,
-    budget: 25,
+    budget: 100,
     description: 'Race to solve clues and explore the city in a unique way.'
   },
 
@@ -67,14 +67,14 @@ const AI_SAMPLES = [
     mood: 'Cultural',
     destination: 'City Art Walk',
     distance: 40,
-    budget: 50,
+    budget: 100,
     description: 'Join a guided walk of city galleries and story-rich murals.'
   },
   {
     mood: 'Cultural',
     destination: 'Historic Town Festival',
     distance: 80,
-    budget: 90,
+    budget: 120,
     description: 'Immerse yourself in living history, food stalls, and local artisan crafts.'
   },
   {
@@ -88,7 +88,7 @@ const AI_SAMPLES = [
     mood: 'Cultural',
     destination: 'Museum Hop',
     distance: 20,
-    budget: 25,
+    budget: 100,
     description: 'Visit top cultural museums with a day pass and snack breaks.'
   },
 
@@ -97,21 +97,21 @@ const AI_SAMPLES = [
     mood: 'Relaxing',
     destination: 'Park Picnic Retreat',
     distance: 12,
-    budget: 15,
+    budget: 100,
     description: 'Pack your own snacks and enjoy open air yoga in a beautiful park.'
   },
   {
     mood: 'Adventurous',
     destination: 'Sunrise Hike & Swim',
     distance: 65,
-    budget: 35,
+    budget: 120,
     description: 'Catch sunrise from a peak, then cool off with a wild lake swim.'
   },
   {
     mood: 'Cultural',
     destination: 'Local Farmers Market',
     distance: 8,
-    budget: 12,
+    budget: 100,
     description: 'Sample fresh produce and handcrafts while supporting local growers.'
   }
 ];

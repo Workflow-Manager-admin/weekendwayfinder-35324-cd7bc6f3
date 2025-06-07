@@ -35,7 +35,7 @@ const SAMPLE_TRIPS = [
   {
     mood: 'Adventurous',
     maxDistance: 80,
-    budget: 90,
+    budget: 110, // previously 90, now at least 100
     destination: 'Kayak River Quest',
     description: 'Test your skills with thrilling rapids and scenic water views.'
   },
@@ -68,7 +68,7 @@ export class TripPlannerComponent {
     this.plannerForm = new FormGroup({
       distance: new FormBuilder().control('', [Validators.required, Validators.min(1)]),
       mood: new FormBuilder().control('', [Validators.required]),
-      budget: new FormBuilder().control('', [Validators.required, Validators.min(10)])
+      budget: new FormBuilder().control('', [Validators.required, Validators.min(100)])
     });
 
     // Listen and trigger suggestions as user types/changes form, with debounce
